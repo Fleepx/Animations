@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*HEADER*/
+header {
+    width: 100%;
+}
+#Hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+.logo-nombre {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    pointer-events: none;
+}
+#Logo {
+    height: 80px;
+    align-self: center;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+}
+li {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: wheat;
+    background-color: rgb(21, 21, 112);
+}
+
+/*MAIN*/
+#banner {
+    background: linear-gradient(to bottom, rgba(3, 45, 182, 0.4) 0%, rgba(3, 45, 182, 0.4) 100%), url(../imgs/abogado-1.jpg);
+    height: 35rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    
+}
+.leyend-banner {
+    filter: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35rem;
+    width: 25rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+#L-1, #L-3 {
+    animation: aparicion 1.5s ease-out;
+}
+@keyframes aparicion {
+    from {
+        transform: translateX(100px);
+        }
+    to {
+        transform: translateX(0);
+        }     
+}
+#L-2 {
+    animation: aparicion-r 1.5s ease-out;
+}
+@keyframes aparicion-r {
+    from {
+        transform: translateX(-100px);
+        }
+    to {
+        transform: translateX(0);
+        }     
+}
+.statics {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.estadisticas {
+    perspective: 1000px;
+}
+  
+.tarjeta {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+  
+.estadisticas:hover .tarjeta {
+    transform: rotateY(180deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;
+}
+  
+.cara-delantera {
+    background-color: #ffffff;
+}
+  
+.cara-trasera {
+    background-color: #03a9f4;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
