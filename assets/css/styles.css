@@ -5,7 +5,8 @@
     scroll-behavior: smooth
 }
 h2 {
-    margin: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
 }
@@ -20,7 +21,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
     margin-top: 1rem;
     align-items: center;
 }
@@ -55,8 +57,8 @@ ul {
     gap: 10px;
     height: 2rem;
     width: 25rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
 }
 ul hr {
     display: none;
@@ -103,7 +105,7 @@ a:hover {
     justify-content: center;
     height: 35rem;
     width: 25rem;
-    margin: 2rem;
+    margin: 1rem;
 }
 #L-1, #L-3 {
     animation: aparicion 1s ease-out;
