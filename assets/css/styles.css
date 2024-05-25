@@ -21,6 +21,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem;
+    margin-top: 1rem;
     align-items: center;
 }
 .logo-nombre {
@@ -44,11 +45,9 @@ header {
         transform: translateY(0);
         }     
 }
-menu {
+#menu {
     display: flex;
     width: 100%;
-    margin-left: 2rem;
-    margin-top: 1rem;
 }
 ul {
     display: flex;
@@ -57,6 +56,8 @@ ul {
     height: 2rem;
     width: 25rem;
     gap: 10px;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 ul hr {
     display: none;
@@ -266,14 +267,20 @@ li {
 }
 footer {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    height: 35rem;
+}
+.info {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 30rem;
+    width: 20rem;
     padding-top: 3rem;
-    padding-left: 5rem;
     padding-bottom: 1rem;
-    background-color: rgb(71, 71, 71);
     color: wheat;
+
 }
 #redes {
     display: flex;
@@ -283,8 +290,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     background-color: rgb(20, 75, 156);
     border-radius: 100%;
 }
