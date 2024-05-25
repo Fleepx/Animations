@@ -2,7 +2,10 @@
     padding: 0;
     margin: 0;
 }
-
+h2 {
+    margin: 2rem;
+    text-align: center;
+}
 
 /*HEADER*/
 header {
@@ -22,8 +25,19 @@ header {
     pointer-events: none;
 }
 #Logo {
-    height: 80px;
+    height: 100px;
     align-self: center;
+}
+.logo-nombre hr {
+    animation: logo 1.5s ease-out;
+}
+@keyframes logo {
+    from {
+        transform: translateY(-100px);
+        }
+    to {
+        transform: translateY(0);
+        }     
 }
 ul {
     display: flex;
@@ -47,9 +61,18 @@ li {
     height: 35rem;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: 0 100%;
     pointer-events: none;
-    
+    animation: scroll-adjust linear;
+	animation-timeline: view(y);
+}
+@keyframes scroll-adjust {
+	0% {
+		background-position:0 100%;
+	}
+	100% {
+		background-position: 0 0;
+	}
 }
 .leyend-banner {
     filter: none;
@@ -63,28 +86,77 @@ li {
     padding: 1rem;
 }
 #L-1, #L-3 {
-    animation: aparicion 1.5s ease-out;
+    animation: aparicion 1s ease-out;
 }
 @keyframes aparicion {
     from {
-        transform: translateX(100px);
+        transform: translateX(50px);
         }
     to {
         transform: translateX(0);
         }     
 }
 #L-2 {
-    animation: aparicion-r 1.5s ease-out;
+    animation: aparicion-r 1s ease-out;
 }
 @keyframes aparicion-r {
     from {
-        transform: translateX(-100px);
+        transform: translateX(-50px);
         }
     to {
         transform: translateX(0);
         }     
 }
-.statics {
+#servicios  {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    margin: 2rem;
+}
+.contorno  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: rgb(20, 75, 156) 10px;
+    border-style: double;
+    color: wheat;
+    height: 140px;
+    width: 140px;
+}
+.icon-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 145px;
+    width: 150px;
+    background-color: rgb(20, 75, 156);
+    border-radius: 100%;
+    transition: transform 0.3s ease;
+}
+.icon-service:hover {
+        transform: scale(1.1);
+}
+#comments {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    height: 15rem;
+    background-color: rgb(20, 75, 156);
+    color: wheat;
+    text-align: center;
+}
+#comments p {
+    color: white;
+}
+
+#statics {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -92,6 +164,8 @@ li {
 }
 .estadisticas {
     perspective: 1000px;
+    margin: 2rem;
+
 }
   
 .tarjeta {
@@ -102,9 +176,10 @@ li {
     transition: transform 0.8s;
 }
   
-.estadisticas:hover .tarjeta {
-    transform: rotateY(180deg);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.estadisticas:hover 
+    .tarjeta {
+        transform: rotateY(180deg);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
   
 .cara {
@@ -128,9 +203,45 @@ li {
     background-color: #03a9f4;
     transform: rotateY(180deg);
 }
+#who {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.quienes-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Abogado-img {
+    width: 25rem;
+}
 
-
-
-
-
-
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    color: wheat;
+}
+#redes {
+    display: flex;
+    gap: 15px;
+}
+.red {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(20, 75, 156);
+    border-radius: 100%;
+}
+#derechos {
+    text-align: center;
+}
