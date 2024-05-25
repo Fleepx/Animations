@@ -6,7 +6,9 @@ h2 {
     margin: 2rem;
     text-align: center;
 }
-
+:root {
+    --princicpal:#152a88;
+}
 /*HEADER*/
 header {
     width: 100%;
@@ -52,12 +54,12 @@ li {
     padding-left: 3px;
     padding-right: 3px;
     color: wheat;
-    background-color: rgb(21, 21, 112);
+    background-color: #151570;
 }
 
 /*MAIN*/
 #banner {
-    background: linear-gradient(to bottom, rgba(3, 45, 182, 0.4) 0%, rgba(3, 45, 182, 0.4) 100%), url(../imgs/abogado-1.jpg);
+    background: linear-gradient(to bottom, rgba(3, 45, 182, 0.4) 0%, #032db666 100%), url(../imgs/abogado-1.jpg);
     height: 35rem;
     width: 100%;
     background-size: cover;
@@ -124,7 +126,7 @@ li {
     align-items: center;
     justify-content: center;
     border-radius: 100%;
-    border: rgb(20, 75, 156) 10px;
+    border: var(--princicpal) 10px;
     border-style: double;
     color: wheat;
     height: 140px;
@@ -136,7 +138,7 @@ li {
     justify-content: center;
     height: 145px;
     width: 150px;
-    background-color: rgb(20, 75, 156);
+    background-color: var(--princicpal);
     border-radius: 100%;
     transition: transform 0.3s ease;
 }
@@ -148,7 +150,7 @@ li {
     flex-direction: column;
     padding-top: 3rem;
     height: 15rem;
-    background-color: rgb(20, 75, 156);
+    background-color: var(--princicpal);
     color: wheat;
     text-align: center;
 }
@@ -216,6 +218,12 @@ li {
 }
 .Abogado-img {
     width: 25rem;
+    border: black 1px solid;
+    filter: grayscale(1);
+    transition: filter 0.5s ease-out;
+}
+.Abogado-img:hover {
+    filter: grayscale(0);
 }
 
 footer {
