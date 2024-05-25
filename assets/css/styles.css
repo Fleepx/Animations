@@ -44,11 +44,17 @@ header {
         transform: translateY(0);
         }     
 }
+menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 ul {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: end;
+    justify-content: center;
+    height: 2rem;
+    width: 25rem;
     gap: 10px;
 }
 ul hr {
@@ -60,8 +66,6 @@ li {
     text-align: center;
     font-style: none;
     font-size: 1.1rem;
-    margin-left: 3px;
-    margin-right: 3px;
     color: wheat;
 }
 
@@ -70,6 +74,7 @@ li {
     background: linear-gradient(to bottom, rgba(3, 45, 182, 0.4) 0%, #032db666 100%), url(../imgs/abogado-1.jpg);
     height: 35rem;
     width: 100%;
+
     background-size: cover;
     background-position: 0 100%;
     pointer-events: none;
@@ -124,13 +129,14 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 25rem;
+    width: 20rem;
     margin: 2rem;
 
 }
@@ -156,7 +162,7 @@ li {
     transition: transform 0.3s ease;
 }
 .icon-service:hover {
-        transform: scale(1.2);
+    transform: scale(1.2);
 }
 #comments {
     display: flex;
@@ -164,15 +170,15 @@ li {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     height: 15rem;
     background-color: var(--princicpal);
     color: wheat;
 }
 #comments p {
     color: white;
+}
+#comments p, #comments h3 {
+    width: 20rem;
 }
 
 #statics {
@@ -186,7 +192,7 @@ li {
     margin: 2rem;
 }
 .tarjeta {
-    width: 350px;
+    width: 20rem;
     height: 200px;
     position: relative;
     transform-style: preserve-3d;
@@ -212,12 +218,11 @@ li {
     text-align: center;
 }
 .cara p, .cara h3 {
-    width: 300px;
+    width: 18rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 .cara-delantera {
-    border-top:wheat 5px double ;
     border: wheat 5px double;
 }
   
@@ -233,25 +238,25 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 #who p {
-    width: 25rem;
+    width: 20rem;
 }
 .quienes-somos {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    width: 25rem;
+    width: 20rem;
     background-color: wheat;
     padding: 1rem;
 }
 .Abogado-img {
-    width: 25rem;
+    width: 20rem;
     border: black 1px solid;
     filter: grayscale(1);
     transition: filter 0.5s ease-out;
