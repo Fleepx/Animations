@@ -20,7 +20,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
     align-items: center;
 }
 .logo-nombre {
@@ -46,8 +46,9 @@ header {
 }
 menu {
     display: flex;
-    justify-content: center;
     width: 100%;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 ul {
     display: flex;
@@ -97,8 +98,7 @@ li {
     justify-content: center;
     height: 35rem;
     width: 25rem;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 2rem;
 }
 #L-1, #L-3 {
     animation: aparicion 1s ease-out;
