@@ -1,10 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth
 }
 h2 {
     margin: 2rem;
     text-align: center;
+    font-size: 2rem;
 }
 :root {
     --princicpal:#152a88;
@@ -27,7 +30,7 @@ header {
     pointer-events: none;
 }
 #Logo {
-    height: 100px;
+    height: 120px;
     align-self: center;
 }
 .logo-nombre hr {
@@ -44,17 +47,22 @@ header {
 ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: end;
     gap: 10px;
+}
+ul hr {
+    display: none;
 }
 li {
     list-style: none;
     text-decoration: none;
+    text-align: center;
+    font-style: none;
     font-size: 1.1rem;
-    padding-left: 3px;
-    padding-right: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
     color: wheat;
-    background-color: #151570;
 }
 
 /*MAIN*/
@@ -109,50 +117,59 @@ li {
         transform: translateX(0);
         }     
 }
+#L-2 span {
+    color: wheat;
+}
 #servicios  {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
     width: 25rem;
     margin: 2rem;
+
 }
 .contorno  {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
-    border: var(--princicpal) 10px;
+    border: #5a6ec5ad 10px;
     border-style: double;
     color: wheat;
-    height: 140px;
-    width: 140px;
+    height: 100px;
+    width: 100px;
 }
 .icon-service {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 145px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     background-color: var(--princicpal);
     border-radius: 100%;
     transition: transform 0.3s ease;
 }
 .icon-service:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
 }
 #comments {
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     height: 15rem;
     background-color: var(--princicpal);
     color: wheat;
-    text-align: center;
 }
 #comments p {
     color: white;
@@ -167,11 +184,9 @@ li {
 .estadisticas {
     perspective: 1000px;
     margin: 2rem;
-
 }
-  
 .tarjeta {
-    width: 300px;
+    width: 350px;
     height: 200px;
     position: relative;
     transform-style: preserve-3d;
@@ -196,25 +211,44 @@ li {
     background-color: #fff;
     text-align: center;
 }
-  
+.cara p, .cara h3 {
+    width: 300px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 .cara-delantera {
-    background-color: #ffffff;
+    border-top:wheat 5px double ;
+    border: wheat 5px double;
 }
   
 .cara-trasera {
-    background-color: #03a9f4;
+    color: wheat;
+    background-color: var(--princicpal);
     transform: rotateY(180deg);
+}
+.cara-trasera p {
+    color: white;
 }
 #who {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
     width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#who p {
+    width: 25rem;
 }
 .quienes-somos {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    width: 25rem;
+    background-color: wheat;
+    padding: 1rem;
 }
 .Abogado-img {
     width: 25rem;
@@ -225,7 +259,6 @@ li {
 .Abogado-img:hover {
     filter: grayscale(0);
 }
-
 footer {
     display: flex;
     flex-direction: column;
@@ -234,7 +267,7 @@ footer {
     padding-top: 3rem;
     padding-left: 5rem;
     padding-bottom: 1rem;
-    background-color: black;
+    background-color: rgb(71, 71, 71);
     color: wheat;
 }
 #redes {
