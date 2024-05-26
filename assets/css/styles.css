@@ -68,9 +68,6 @@ ul {
     margin-left: 1rem;
     margin-top: 3rem;
 }
-ul hr {
-    display: none;
-}
 #Inicio {
     display: none;
 }
@@ -401,8 +398,20 @@ footer {
         translate: 10px 80px;
         animation: logo 1.5s ease-out;
     }
-    a {
+    li {
+        width: 3rem;
+    }
+    li a {
+        color: white;
+    }
+    li a:hover {
         color: wheat;
+    }
+    ul li {
+        transition: all 0.5s ;
+    }
+    ul li:hover {
+        translate: 10px;
     }
     .Ban {
         display: flex;
