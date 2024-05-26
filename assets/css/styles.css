@@ -417,7 +417,8 @@ footer {
         text-align: end;
         height: 30rem;
         width: 25rem;
-        padding-right: 4rem;
+        padding-top: 2rem;
+        padding-right: 7rem;
         animation: logo 1.5s ease-out;
     }
 
