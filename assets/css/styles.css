@@ -340,7 +340,27 @@ footer {
     padding-top: 2rem;
     transition: all 1s ease;
 }
-
+.boton-subir {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 65px;
+    height: 65px;
+    color: wheat;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: var(--princicpal);
+    transition: all 0.5s ease;
+}
+.boton-subir:hover {
+    color: var(--princicpal);
+    background-color: wheat;
+    transform: scale(1.1);
+  }
 
 
 
